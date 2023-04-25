@@ -11,12 +11,13 @@ namespace baseClasses
         private int _armor;
         private int _speed;
 
-        public Hero(string name, int level, int health, int damage, int armor) {
+        public Hero(string name, int level, int health, int damage, int armor, int speed) {
             _name = name;
             _level = level;
             _health = health;
             _damage = damage;
             _armor = armor;
+            _speed = speed;
         }
     }
 }
