@@ -2,7 +2,7 @@ using System;
 
 namespace baseClasses
 {
-    abstract class Hero
+    abstract class Hero : IPlayerOption
     {
         private string _name;
         private int _level;
@@ -19,5 +19,7 @@ namespace baseClasses
             _armor = armor;
             _speed = speed;
         }
+        
+        
     }
 }
