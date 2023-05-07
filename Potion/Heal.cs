@@ -1,8 +1,20 @@
 ﻿using System;
+using Base.Potion;
 
-public class Class1
+namespace Potion
 {
-	public Class1()
-	{
-	}
+    public class HealPotion : Potion
+    {
+        public HealPotion(int addHealth) : base(addHealth)
+        {
+            this._addHealth = addHealth;
+        }
+
+        public int _addHealth { get; set; }
+
+        public void UsePotion()
+        {
+            Console.WriteLine("You used a heal potion and gained " + _addHealth + " health.");
+        }
+    }
 }

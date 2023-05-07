@@ -2,7 +2,7 @@ using System;
 
 namespace baseClasses
 {
-    abstract class Weapon
+    abstract class Weapon : IPlayerOption
     {
         private string _name;
         private int _level;
